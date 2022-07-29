@@ -443,7 +443,7 @@ section#under-background .schedule .right a.schedule-btn {
 	width: 325px;
 	bottom: 20px;
 	right: 50px;
-	background: #4a4a4a57;
+	background: #040707;
 	padding: 28px 20px 20px 20px
 }
 
@@ -571,6 +571,10 @@ section.keyarea .prebook article aside .box2 span {
 	max-height: initial
 }
 
+.gallery-section {
+	margin-left: 102px;
+}
+
 section.club-gallery .gallery-section {
 	padding: 0 106px
 }
@@ -587,7 +591,14 @@ section.club-gallery .gallery-section .slider .slick-slide {
 
 section.club-gallery .gallery-section .slider .slick-slide .gallery-imgs a img.nomargin {
 	width: 100%;
-	height: 250px
+	height: 250px;
+	margin-bottom: 10px
+}
+
+section.club-gallery .gallery-section .slider .slick-slide .gallery-imgs p {
+    font-size: 24px;
+    margin-left: 44px;
+    margin-bottom: 20px;
 }
 
 section.club-gallery .gallery-section .slider .slick-slide div {
