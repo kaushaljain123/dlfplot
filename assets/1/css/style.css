@@ -185,7 +185,7 @@ nav a {
 }
 
 .navigation .nav li a {
-	color: #fff;
+	color: #000;
 	font-weight: 500
 }
 
@@ -195,9 +195,9 @@ nav.navbar.shrink .nav li.active:before {
 }
 
 .mavmenu {
-	background: #4a4a4a57;
+	background: #fff;
 	float: left;
-	width: 100%
+	width: 100%;
 	
 }
 
@@ -205,7 +205,7 @@ nav.navbar.shrink a {
 	font-size: 14px;
 	padding-bottom: 28px!important;
 	padding-top: 28px!important;
-	color: #fff
+	color: #000
 }
 
 nav.navbar.shrink .navbar-brand img {
@@ -302,11 +302,12 @@ nav.navbar.shrink .phone_number_nav,
 
 .project-name {
 	position: absolute;
-	top: 82%;
-	left: 20px;
-	transform: translateY(-50%);
-	background: #4a4a4a57;
-	padding: 22px 22px
+    top: 51%;
+    left: 25px;
+    transform: translateY(-50%);
+    background: #000000;
+    padding: 32px 22px;
+    border-radius: 14px;
 }
 
 .project-name h1 {
@@ -440,11 +441,11 @@ section#under-background .schedule .right a.schedule-btn {
 
 .home-form {
 	position: absolute;
-	width: 325px;
-	bottom: 20px;
-	right: 50px;
-	background: #040707;
-	padding: 28px 20px 20px 20px
+    width: 316px;
+    bottom: 175px;
+    right: 63px;
+    background: #040707;
+    padding: 28px 20px 20px 20px;
 }
 
 .home-form .expert-home {
@@ -530,8 +531,12 @@ section.keyarea {
 }
 
 section.keyarea .prebook {
-	width: 100%;
-	float: left
+	display: flex;
+    width: 100%;
+    float: left;
+    /* text-align: center; */
+    margin-left: 25%;
+    flex-wrap: wrap;
 }
 
 section.keyarea .prebook article {
@@ -1689,6 +1694,11 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 	position: relative
 }
 
+.mapArea {
+	width:"450";
+	height:"300"
+}
+
 .howtobook-box span {
 	width: 85px;
 	height: 85px;
@@ -2606,6 +2616,22 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 		height: 400px;
 		margin-top: 77px
 	}
+
+	@media only screen and (max-width: 600px) {
+		.slider-size {
+			height: 320px !important;
+		}
+
+		.project-name {
+			background: #00000052;
+			margin-top: -15%;
+		}
+
+		.prebook {
+			position: relative;
+			margin-left: -1% !important;
+		}
+	  }
 	.home-form {
 		display: none
 	}
@@ -2869,3 +2895,31 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 	box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0
 }
 
+.vsv-icon,
+  .vsv-img .h1 {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .vsv-img:hover .h1 {
+    font-size: 2vw;
+  }
+  .vsv-img:hover .vsv-text-bg {
+    font-size: 1.3vw;
+  }
+
+
+  .centered:hover {
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+	width: 100%;
+  }
+
+  .text1:hover, .text2:hover {
+	font-size: 2vw;
+  }
