@@ -19,6 +19,8 @@
 	font-style: normal
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -241,11 +243,13 @@ nav.navbar.shrink .phone_number_nav,
 }
 
 .microsite-h2 {
-	color: goldenrod;
-	text-align: center;
-	display: table;
-	margin: 0 auto 50px;
-	position: relative
+    color: #23bf25;
+    text-align: center;
+    display: table;
+    margin: 0 auto 50px;
+    position: relative;
+    font-weight: bold;
+	font-family: 'Oleo Script', cursive !important;
 }
 
 .microsite-h2:before {
@@ -305,7 +309,7 @@ nav.navbar.shrink .phone_number_nav,
     top: 51%;
     left: 25px;
     transform: translateY(-50%);
-    background: #000000;
+    background: #0000007d;
     padding: 32px 22px;
     border-radius: 14px;
 }
@@ -444,7 +448,7 @@ section#under-background .schedule .right a.schedule-btn {
     width: 316px;
     bottom: 175px;
     right: 63px;
-    background: #040707;
+    background: #0000007d;
     padding: 28px 20px 20px 20px;
 }
 
@@ -525,18 +529,32 @@ section#under-background .schedule .right a.schedule-btn {
 
 section.keyarea {
 	padding: 60px 0 30px 0;
-	background: #f3f3f3;
-	float: left;
 	width: 100%
 }
 
 section.keyarea .prebook {
 	display: flex;
     width: 100%;
+    margin-top: -5%;
     float: left;
-    /* text-align: center; */
-    margin-left: 25%;
+    text-align: center;
+    margin-left: 0%;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 1%;
+}
+
+.ame img {
+    width: 10vw !important;
+    height: 10vw;
+    margin-right: 1vw;
 }
 
 section.keyarea .prebook article {
@@ -620,13 +638,13 @@ section.club-gallery .gallery-section .slider .slick-slide div:last-child {
 
 section.club-gallery .gallery-section a h2 {
 	position: absolute;
-	bottom: 10px;
-	padding: 5px 0 10px 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	color: #dadada;
-	background: #4a4a4a57
+    bottom: 10px;
+    padding: 5px 0 10px 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background: #000000a8;
 }
 
 .club-gallery .gallery-section .slider .slick-slide div,
@@ -2056,6 +2074,10 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 	cursor: url(grabbing.html) 8 8, move
 }
 
+.customeFamiluy {
+	font-family: 'Oleo Script', cursive !important;
+}
+
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
 	-webkit-backface-visibility: hidden;
@@ -2617,7 +2639,13 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 		margin-top: 77px
 	}
 
-	@media only screen and (max-width: 600px) {
+	.mainFeature {
+		display: flex;
+		padding: 5% 10% 10px;
+		flex-direction: row;
+	}
+
+	@media only screen and (max-width: 900px) {
 		.slider-size {
 			height: 320px !important;
 		}
@@ -2630,6 +2658,17 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 		.prebook {
 			position: relative;
 			margin-left: -1% !important;
+		}
+
+		.ame {
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid #c8c8c8;
+		}
+
+		.mainFeature {
+			display: flex;
+    		flex-direction: column;
 		}
 	  }
 	.home-form {
