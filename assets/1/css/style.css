@@ -241,7 +241,7 @@ nav.navbar.shrink .phone_number_nav,
 }
 
 .microsite-h2 {
-	color: var(--main-header-color);
+	color: goldenrod;
 	text-align: center;
 	display: table;
 	margin: 0 auto 50px;
