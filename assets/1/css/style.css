@@ -2668,10 +2668,14 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 
 		.mainFeature {
 			display: flex;
-    		flex-direction: column;
+			flex-direction: column;
+			align-content: stretch;
+			justify-content: center;
+			align-items: baseline;
+		
 		}
 
-		#overview-virtual, .fetureButton {
+		#overview-virtual, .fetureButton, .mobileImage {
 			display: none;
 		}
 	  }
