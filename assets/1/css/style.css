@@ -2670,6 +2670,10 @@ section#location-area .located-map .ts-list-colored-bullets ul li span {
 			display: flex;
     		flex-direction: column;
 		}
+
+		#overview-virtual, .fetureButton {
+			display: none;
+		}
 	  }
 	.home-form {
 		display: none
